@@ -13,5 +13,8 @@ function test(data) {
     API.chatLog("Mehs To Skip",1);
     API.chatLog(JSON.stringify(d),1);
     }
+    if (command == "/best"){
+        API.sendChat("donvoo Is Better Then Me");
+    }
 }
 
