@@ -1,18 +1,13 @@
-API.on(API.chatLog("Nightcore Script Running",1));
+API.on(API.chatLog("Nightcore Script Running, Go /cmd For Commands",1));
 API.on(API.CHAT_COMMAND, test);
-var e = new Date();
-var bug = '100';
-var bu = '0';
+//Variables
 var b = API.getUsers().length;
 var c = b * .075;
 var d = Math.round(c);
-var seto = "Nothing has been set";
-var lala = new Date();
+//Commands
 function test(data) {
     var command = data;
     if (command == "/meh"){
-    //bug = prompt("Please Input How Many People Are In The Room");
-    bu = bug * .075
     API.chatLog("Mehs To Skip:",1);
     API.chatLog(JSON.stringify(d),1);
     }
@@ -24,7 +19,7 @@ function test(data) {
         API.chatLog("Documents made by DJ_YoloSwaggins33, What a scrub!",1)
     }
     if (command == "/cmd"){
-        API.chatLog("Commands: /meh, /madeby, /best, /Rick, and /cmd",1);
+        API.chatLog("Commands: /meh, /madeby, /best, /Rick, /Website and /cmd",1);
     }
     if (command == "/Ship"){
         API.chatLog("http://imgur.com/gallery/eHGde/new",1)
@@ -38,21 +33,20 @@ function test(data) {
     }
     if (command == "/Website"){
         API.chatLog("URL: http://www.nightcore-331.tk/index.php",30)
-        window.open("http://www.nightcore-331.tk/index.php") 
     }
 }
+//Chat Triggers
 API.on(API.CHAT, chat);
 function chat(data){
-    if (data.message.slice(0,4) == "seto" & data.un == "donvoo"){
-        API.sendChat(seto)
-    }
     if (data.message.slice(0,11) == "WhoMyScript" & data.un == "donvoo" ){
         API.sendChat("I'm Using Your Script donvoo-Senpai <3 !")
     }
+    if (data.message.slice(0,7) == "@donvooo" & data.un == "SushiNatilie" ){
+        API.sendChat("Why Would You Say that!?!",1)
+    }
      if (data.message.slice(0,8) == "RickRoll" & data.un == "donvoo" ){
       window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")   
-     }
-    else { console.log("No one said anything that matched!")}
+    }
 }
     
 
