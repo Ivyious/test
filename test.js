@@ -24,17 +24,9 @@ function test(data) {
     if (command == "/cmd"){
         API.chatLog("Commands: /meh, /madeby, /best, /Rick, and /cmd",1);
     }
-    if (command == "/JennyxSilent"){
-        API.chatLog("http://i.imgur.com/uT7yXPZ.png",1)
-        API.chatLog("Please Dont Kill Me JenJen <3",1)
-    }
-    if (command == "/RanexUm"){
-        API.chatLog("http://i.imgur.com/fly3i5r.png",1)
-        API.chatLog("Please Dont Kill Me Rane <3",1)
-     }
-    if (command == "/donvooxSushi"){
-        API.chatLog("http://i.imgur.com/p9jXVoW.png",1)
-        API.chatLog("It Kills Me To Have This Here... :/",1)
+    if (command == "/Ship"){
+        API.chatLog("http://imgur.com/gallery/eHGde/new",1)
+        API.chatLog("All The Ships!",1)
     }
     if (command == "/set"){
        seto =  prompt("What Would You Like To Text To Be?")
@@ -43,7 +35,7 @@ function test(data) {
        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     }
     if (command == "/Test"){
-       API.chatLog(document.getElementById("level"),1)
+       API.chatLog(document.getElementById("level").value,1)
     }
 }
 API.on(API.CHAT, chat);
