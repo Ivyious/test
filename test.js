@@ -1,5 +1,6 @@
 API.on(API.chatLog("Nightcore Script Running",1));
 API.on(API.CHAT_COMMAND, test);
+var e = new Date();
 var bug = '100';
 var bu = '0';
 var b = API.getUsers().length;
@@ -21,6 +22,9 @@ function test(data) {
     }
     if (command == "/cmd"){
         API.chatLog("Commands: /meh, /madeby, /best, and /cmd",1);
+    }
+    if (command == "/date"){
+        API.chatLog(document.getElementById("demo").innerHTML = e)
     }
 }
 API.on(API.CHAT, chat);
