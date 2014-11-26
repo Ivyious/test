@@ -42,7 +42,7 @@ function test(data) {
 }
 API.on(API.CHAT, chat);
 function chat(data){
-    if (data.message.slice(0,19) == "seto"){
+    if (data.message.slice(0,4) == "seto"){
         API.sendChat(seto)
     }
     if (data.message.slice(0,11) == "WhoMyScript" & data.un == "donvoo" ){
