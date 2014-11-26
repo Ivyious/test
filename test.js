@@ -7,7 +7,7 @@ var b = API.getUsers().length;
 var c = b * .075;
 var d = Math.round(c)
 var seto = "Nothing has been set"
-var lala = document.getElementId("vote").woot.bottom.value()
+var lala = document.getElementById("woot").bottom.span
 function test(data) {
     var command = data;
     if (command == "/meh"){
