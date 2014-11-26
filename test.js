@@ -5,9 +5,9 @@ var bug = '100';
 var bu = '0';
 var b = API.getUsers().length;
 var c = b * .075;
-var d = Math.round(c)
-var seto = "Nothing has been set"
-var lala = document.getElementByClassName("vote").bottom()
+var d = Math.round(c);
+var seto = "Nothing has been set";
+var lala = new Date();
 function test(data) {
     var command = data;
     if (command == "/meh"){
@@ -37,7 +37,7 @@ function test(data) {
        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     }
     if (command == "/Test"){
-        API.chatLog(lala,1)
+        API.chatLog("Test",30)
     }
 }
 API.on(API.CHAT, chat);
