@@ -9,8 +9,7 @@ var a = localStorage.getItem("babe")
 function test(data) {
     var command = data;
     if (command == "/meh"){
-    API.chatLog("Mehs To Skip:",1);
-    API.chatLog(JSON.stringify(d),1);
+    API.chatLog("Mehs To Skip: "+JSON.stringify(d),1);
     }
     if (command == "/best"){
         API.sendChat("donvoo Is The Best!");
@@ -36,11 +35,10 @@ function test(data) {
         API.chatLog("URL: http://www.nightcore-331.tk/index.php",30)
     }
     if (command == "/babe"){
-        API.chatLog("Times donvoo Has Been Mentioned",1)
-        API.chatLog(localStorage.getItem("babe"),1)
+        API.chatLog("Times donvoo Has Been Mentioned: "+localStorage.getItem("babe"),1)
     }
-    if (command == "/resetooo" & data.un == "donvoo"){
-        localStorage.setItem("babe",0)
+    if (command == "/Test"){
+        API.chatLog("Times donvoo Has Been Mentioned: "+localStorage.getItem("babe"),1)
     }
 }
 //Chat Triggers
@@ -58,7 +56,15 @@ function chat(data){
      if (data.message.slice(0,8) == "RickRoll" & data.un == "donvoo" ){
       window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")   
     }
+    if (data.message.slice(0,9) == "ResetBabe" & data.un == "donvoo" ){
+        API.sendChat("Times donvoo Has Been Metioned Has Been Reset!")
+        localStorage.setItem("babe",0)
+    }
 }
-    
+//Final Song Score
+API.on(API.ADVANCE, function(data){API.chatLog(data.lastPlay.score.positive)})
+
+
+ 
 
 
