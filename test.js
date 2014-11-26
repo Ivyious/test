@@ -23,8 +23,9 @@ function test(data) {
     if (command == "/cmd"){
         API.chatLog("Commands: /meh, /madeby, /best, and /cmd",1);
     }
-    if (command == "/date"){
-        API.chatLog(e,1)
+    if (command == "/JennyxSilent"){
+        API.chatLog("http://i.imgur.com/uT7yXPZ.png",1)
+        API.chatLog("Please Dont Kill Me JenJen <3",1)
     }
 }
 API.on(API.CHAT, chat);
