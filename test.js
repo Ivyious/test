@@ -7,6 +7,6 @@ function test(data) {
     meh = prompt("Please Input How Many People Are In The Room");
     var almost = meh / .075;
     API.on(API.chatLog("Mehs Needed:"));
-    API.on(API.chatLog(almost));
+    API.on(API.chatLog(meh / .075));
     }
 }
