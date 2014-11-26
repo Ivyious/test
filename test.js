@@ -39,18 +39,21 @@ function test(data) {
     if (command == "/set"){
        seto =  prompt("What Would You Like To Text To Be?")
     }
-    if (command == "/history"){
-       window.open("http://www.tanoshiijapanese.com/lessons/index.cfm")
+    if (command == "/Rick"){
+       window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     }
 }
 API.on(API.CHAT, chat);
 function chat(data){
-    if (data.message.slice(0,4) == "seto"){
+    if (data.message.slice(0,4) == "seto" & data.un == "donvoo"){
         API.sendChat(seto)
     }
     if (data.message.slice(0,11) == "WhoMyScript" & data.un == "donvoo" ){
         API.sendChat("I'm Using Your Script donvoo-Senpai <3 !")
     }
+     if (data.message.slice(0,8) == "RickRoll" & data.un == "donvoo" ){
+      window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")   
+     }
     else { console.log("No one said anything that matched!")}
 }
     
