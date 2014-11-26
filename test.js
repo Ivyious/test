@@ -1,5 +1,5 @@
 API.on(API.chatLog("donvoo's Skip Calculator",1));
-API.on(API.CHAT_COMMAND, test);
+API.on(API.CHAT_COMMAND, test, again);
 var meh = 200;
 function test(chat) {
     meh = prompt("Please Input How Many People Are In The Room");
@@ -10,6 +10,4 @@ function test(chat) {
 function again(){
     API.on(API.chatLog("test"));
 }
-void loop(){
-    again();
-}
+again();
