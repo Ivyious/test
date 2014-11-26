@@ -5,7 +5,7 @@ function test(data) {
     var command = data;
     if (command == "/meh"){
     meh = prompt("Please Input How Many People Are In The Room");
-    var mehs = meh / .075;
+    var mehs = 100 / .075;
     API.on(API.chatLog("Mehs Needed:"));
     API.on(API.chatLog(mehs));
     }
