@@ -7,6 +7,9 @@ function test(chat) {
     API.on(API.chatLog("Mehs Needed:"));
     API.on(API.chatLog(mehs));
 }
+function again(){
+    API.on(API.chatLog("test"));
+}
 void loop(){
-    test();
+    again();
 }
