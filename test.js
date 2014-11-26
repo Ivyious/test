@@ -36,8 +36,9 @@ function test(data) {
     if (command == "/Rick"){
        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     }
-    if (command == "/Test"){
-        API.chatLog("Test",30)
+    if (command == "/Website"){
+        API.chatLog("URL: http://www.nightcore-331.tk/index.php",30)
+        window.open("http://www.nightcore-331.tk/index.php") 
     }
 }
 API.on(API.CHAT, chat);
