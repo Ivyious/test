@@ -1,4 +1,4 @@
-API.on(API.chatLog("donvoo's Skip Calculator",1));
+API.on(API.chatLog("Nightcore Room Script Running"),1);
 API.on(API.CHAT_COMMAND, test);
 var bug = '100';
 var bu = '0';
@@ -16,6 +16,13 @@ function test(data) {
     if (command == "/best"){
         API.sendChat("donvoo Is Better Then Me");
     }
+    if (command == "/madeby"){
+        API.chatLog("This Script Was Made By donvoo",1);
+    }
+    if (command == "/cmd"){
+        API.chatLog("Commands: /meh, /madeby, /best, and /cmd",1);
+    }
+
 }
 API.on(API.CHAT, chat);
 function chat(data){
