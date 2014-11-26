@@ -22,7 +22,7 @@ function test(data) {
         API.chatLog("This Script Was Made By donvoo, Go donvoo!",1);
     }
     if (command == "/cmd"){
-        API.chatLog("Commands: /meh, /madeby, /best, and /cmd",1);
+        API.chatLog("Commands: /meh, /madeby, /best, /Rick, and /cmd",1);
     }
     if (command == "/JennyxSilent"){
         API.chatLog("http://i.imgur.com/uT7yXPZ.png",1)
