@@ -17,4 +17,13 @@ function test(data) {
         API.sendChat("donvoo Is Better Then Me");
     }
 }
+API.on(API.CHAT, chat);
+function chat(data){
+    if (data.message.slice(0,7) == "JennyxSilent"){
+        API.sendChat("Jenny <3 Silent")
+    }
+    else { console.log("No one said anything that matched")}
+}
+    
+
 
