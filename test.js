@@ -1,3 +1,2 @@
-var players = document.getElementById("vote")
-API.on(API.chatLog(API.getUser()));
-API.djJoin()
+API.on(API.chatLog("*donvoo's Skip Calculator*"));
+API.on(API.chatLog(API.people()));
