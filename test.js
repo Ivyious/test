@@ -1,1 +1,1 @@
-API.on(API.chatLog("Test", 1));
+API.on(API.chatLog("Test"));
