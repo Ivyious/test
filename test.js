@@ -7,7 +7,7 @@ var b = API.getUsers().length;
 var c = b * .075;
 var d = Math.round(c)
 var seto = "Nothing has been set"
-var lala = document.getElementById("woot").bottom.span
+var lala = document.getElementByClassName("bottom").value()
 function test(data) {
     var command = data;
     if (command == "/meh"){
@@ -21,7 +21,7 @@ function test(data) {
     }
     if (command == "/madeby"){
         API.chatLog("This Script Was Made By donvoo, Go donvoo!",1);
-        API.chatLog("Documents made by DJ_YoloSwaggins33, What a scrub!")
+        API.chatLog("Documents made by DJ_YoloSwaggins33, What a scrub!",1)
     }
     if (command == "/cmd"){
         API.chatLog("Commands: /meh, /madeby, /best, /Rick, and /cmd",1);
