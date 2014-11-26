@@ -36,7 +36,7 @@ function test(data) {
         API.chatLog("http://i.imgur.com/p9jXVoW.png",1)
         API.chatLog("It Kills Me To Have This Here... :/",1)
       }
-    if (command == "/set" & data.un == "donvoo"){
+    if (command == "/set"){
        seto =  prompt("What Would You Like To Text To Be?")
       }
 }
