@@ -20,6 +20,7 @@ function test(data) {
     }
     if (command == "/madeby"){
         API.chatLog("This Script Was Made By donvoo, Go donvoo!",1);
+        API.chatLog("Documents made by DJ_YoloSwaggins33, What a scrub!")
     }
     if (command == "/cmd"){
         API.chatLog("Commands: /meh, /madeby, /best, /Rick, and /cmd",1);
