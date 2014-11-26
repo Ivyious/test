@@ -1,7 +1,7 @@
 API.on(API.chatLog("donvoo's Skip Calculator",1));
 API.on(API.CHAT_COMMAND, test);
-var testtest = "100";
-var lala = "hello world";
+var testTest = '100';
+var laLa = "hello world";
 function test(data) {
     var command = data;
     if (command == "/meh"){
