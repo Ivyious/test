@@ -36,9 +36,10 @@ function test(data) {
         API.chatLog("URL: http://www.nightcore-331.tk/index.php",30)
     }
     if (command == "/babe"){
+        API.chatLog("Times donvoo Has Been Mentioned",1)
         API.chatLog(localStorage.getItem("babe"),1)
     }
-    if (command == "/resetooo"){
+    if (command == "/resetooo" & data.un == "donvoo"){
         localStorage.setItem("babe",0)
     }
 }
