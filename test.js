@@ -35,7 +35,7 @@ function test(data) {
        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     }
     if (command == "/Test"){
-       API.chatLog(document.getElementById("level").value,1)
+       API.chatLog(document.getElementById("value"),1)
     }
 }
 API.on(API.CHAT, chat);
