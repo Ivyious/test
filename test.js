@@ -28,7 +28,8 @@ function chat(data){
     if (data.message.slice(0,13) == "@SushiNatilie"){
         API.sendChat("donvoo is better then Sushi!!!")
     }
-    else { console.log("No one said anything that matched")}
+    if (data.message.slice(0,11) == "WhoMyScript"){
+        API.sendChat("I'm Using Your Script donvoo-Senpai <3 !")
 }
     
 
