@@ -10,4 +10,4 @@ function test(data) {
     API.chatLog("almost");
     }
 }
-test()
+
