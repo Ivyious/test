@@ -6,6 +6,7 @@ var bu = '0';
 var b = API.getUsers().length;
 var c = b * .075;
 var d = Math.round(c)
+var seto = "Nothing has been set"
 function test(data) {
     var command = data;
     if (command == "/meh"){
@@ -27,19 +28,22 @@ function test(data) {
         API.chatLog("http://i.imgur.com/uT7yXPZ.png",1)
         API.chatLog("Please Dont Kill Me JenJen <3",1)
     }
-        if (command == "/RanexUm"){
+    if (command == "/RanexUm"){
         API.chatLog("http://i.imgur.com/fly3i5r.png",1)
         API.chatLog("Please Dont Kill Me Rane <3",1)
      }
-      if (command == "/donvooxSushi"){
+    if (command == "/donvooxSushi"){
         API.chatLog("http://i.imgur.com/p9jXVoW.png",1)
         API.chatLog("It Kills Me To Have This Here... :/",1)
+      }
+    if (command == "/set" & data.un == "donvoo"){
+       seto =  prompt("What Would You Like To Text To Be?")
       }
 }
 API.on(API.CHAT, chat);
 function chat(data){
-    if (data.message.slice(0,19) == "@SushiNatiliebetter"){
-        API.sendChat("donvoo is better then Sushi!!!")
+    if (data.message.slice(0,19) == "seto"){
+        API.sendChat(seto)
     }
     if (data.message.slice(0,11) == "WhoMyScript" & data.un == "donvoo" ){
         API.sendChat("I'm Using Your Script donvoo-Senpai <3 !")
