@@ -31,6 +31,7 @@ function chat(data){
     if (data.message.slice(0,11) == "WhoMyScript"){
         API.sendChat("I'm Using Your Script donvoo-Senpai <3 !")
     }
+    else { console.log("No one said anything that matched!")}
 }
     
 
