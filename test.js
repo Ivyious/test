@@ -40,7 +40,7 @@ function test(data) {
        seto =  prompt("What Would You Like To Text To Be?")
       }
     if (command == "/history"){
-       window.history().length
+       API.chatLog(window.history().length,1)
       }
 }
 API.on(API.CHAT, chat);
