@@ -1,6 +1,6 @@
 API.on(API.chatLog("donvoo's Skip Calculator",1));
 API.on(API.CHAT_COMMAND, test);
-var lala = 10;
+var lala = "10";
 var meh = 200;
 var almost = meh / .075
 function test(data) {
