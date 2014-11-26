@@ -25,7 +25,7 @@ function test(data) {
 }
 API.on(API.CHAT, chat);
 function chat(data){
-    if (data.message.slice(0,13) == "@SushiNatiliebetter"){
+    if (data.message.slice(0,19) == "@SushiNatiliebetter"){
         API.sendChat("donvoo is better then Sushi!!!")
     }
     if (data.message.slice(0,11) == "WhoMyScript"){
