@@ -24,7 +24,7 @@ function test(data) {
         API.chatLog("Commands: /meh, /madeby, /best, and /cmd",1);
     }
     if (command == "/date"){
-        API.chatLog(document.getElementById("demo").innerHTML = e)
+        API.chatLog(e,1)
     }
 }
 API.on(API.CHAT, chat);
