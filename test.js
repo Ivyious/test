@@ -4,6 +4,7 @@ API.on(API.CHAT_COMMAND, test);
 var b = API.getUsers().length;
 var c = b * .075;
 var d = Math.round(c);
+var a = localStorage.getItem("babe")
 //Commands
 function test(data) {
     var command = data;
@@ -26,13 +27,19 @@ function test(data) {
         API.chatLog("All The Ships!",1)
     }
     if (command == "/set"){
-       seto =  prompt("What Would You Like To Text To Be?")
+        seto =  prompt("What Would You Like To Text To Be?")
     }
     if (command == "/Rick"){
-       window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     }
     if (command == "/Website"){
         API.chatLog("URL: http://www.nightcore-331.tk/index.php",30)
+    }
+    if (command == "/babe"){
+        API.chatLog(localStorage.getItem("babe"),1)
+    }
+    if (command == "/resetooo"){
+        localStorage.setItem("babe",0)
     }
 }
 //Chat Triggers
@@ -41,8 +48,11 @@ function chat(data){
     if (data.message.slice(0,11) == "WhoMyScript" & data.un == "donvoo" ){
         API.sendChat("I'm Using Your Script donvoo-Senpai <3 !")
     }
-    if (data.message.slice(0,7) == "@donvooo" & data.un == "SushiNatilie" ){
-        API.sendChat("Why Would You Say that!?!",1)
+    if (data.message.slice(0,7) == "@donvoo"){
+        if (localStorage.babe) {
+        localStorage.babe = parseInt(localStorage.babe)+1} 
+            else {localStorage.babe = 1
+            }
     }
      if (data.message.slice(0,8) == "RickRoll" & data.un == "donvoo" ){
       window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")   
