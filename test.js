@@ -1,1 +1,2 @@
-API.on(API.chatLog("Test"));
+var players = document.getElementById("vote")
+API.on(API.chatLog(players));
