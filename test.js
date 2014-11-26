@@ -14,7 +14,7 @@ function test(data) {
     API.chatLog(JSON.stringify(d),1);
     }
     if (command == "/Best"){
-        API.sendChat("donvoo Is Better Then Me, and so is his avatar! He is also better then Sushi!");
+        API.chatLog("donvoo Is Better Then Me, and so is his avatar! He is also better then Sushi!");
     }
     if (command == "/madeby"){
         API.chatLog("This Script Was Made By donvoo, Go donvoo!",1);
@@ -25,8 +25,8 @@ function test(data) {
 }
 API.on(API.CHAT, chat);
 function chat(data){
-    if (data.message.slice(0,12) == "JennyxSilent"){
-        API.chatLog("Jenny <3 Silent",1)
+    if (data.message.slice(0,5) == "Sushi"){
+        API.sendChat("donvoo is better then Sushi!!!")
     }
     else { console.log("No one said anything that matched")}
 }
