@@ -10,7 +10,7 @@ function test(data) {
     if (command == "/meh"){
     //bug = prompt("Please Input How Many People Are In The Room");
     bu = bug * .075
-    API.chatLog("Mehs To Skip",1);
+    API.chatLog("Mehs To Skip:",1);
     API.chatLog(JSON.stringify(d),1);
     }
     if (command == "/best"){
