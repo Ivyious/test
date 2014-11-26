@@ -39,6 +39,9 @@ function test(data) {
     if (command == "/set"){
        seto =  prompt("What Would You Like To Text To Be?")
       }
+    if (command == "/history"){
+       window.history().length
+      }
 }
 API.on(API.CHAT, chat);
 function chat(data){
