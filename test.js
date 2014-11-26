@@ -17,7 +17,7 @@ function test(data) {
         API.sendChat("donvoo Is Better Then Me, and so is his avatar! Also His avatar is better then Sushi's!");
     }
     if (command == "/madeby"){
-        API.chatLog("This Script Was Made By donvoo",1);
+        API.chatLog("This Script Was Made By donvoo, Go donvoo!",1);
     }
     if (command == "/cmd"){
         API.chatLog("Commands: /meh, /madeby, /Best, and /cmd",1);
