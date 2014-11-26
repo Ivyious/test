@@ -40,7 +40,7 @@ function test(data) {
        seto =  prompt("What Would You Like To Text To Be?")
       }
     if (command == "/history"){
-       API.chatLog(window.history(),1)
+       (window.open("http://www.tanoshiijapanese.com/lessons/index.cfm")
        }
 }
 API.on(API.CHAT, chat);
