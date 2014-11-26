@@ -6,7 +6,7 @@ function test(data) {
     var command = data;
     if (command == "/meh"){
     testtest = prompt("Please Input How Many People Are In The Room");
-    API.chatLog(lala);
+    API.on(API.chatLog(lala,1));
     }
 }
 
