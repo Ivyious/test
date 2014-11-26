@@ -27,6 +27,13 @@ function test(data) {
         API.chatLog("http://i.imgur.com/uT7yXPZ.png",1)
         API.chatLog("Please Dont Kill Me JenJen <3",1)
     }
+        if (command == "/RanexUm"){
+        API.chatLog("http://i.imgur.com/fly3i5r.png",1)
+        API.chatLog("Please Dont Kill Me Rane <3",1)
+    }
+      if (command == "/donvooxSushi"){
+        API.chatLog("http://i.imgur.com/fly3i5r.png",1)
+        API.chatLog("It Kills Me To Have This Here... :/",1)
 }
 API.on(API.CHAT, chat);
 function chat(data){
