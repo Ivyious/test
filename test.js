@@ -14,7 +14,7 @@ function test(data) {
     API.chatLog(JSON.stringify(d),1);
     }
     if (command == "/best"){
-        API.sendChat("donvoo Is Better Then Me");
+        API.sendChat("donvoo Is Better Then Me, and so is his avatar!");
     }
     if (command == "/madeby"){
         API.chatLog("This Script Was Made By donvoo",1);
@@ -22,7 +22,6 @@ function test(data) {
     if (command == "/cmd"){
         API.chatLog("Commands: /meh, /madeby, /best, and /cmd",1);
     }
-
 }
 API.on(API.CHAT, chat);
 function chat(data){
