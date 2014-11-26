@@ -13,14 +13,14 @@ function test(data) {
     API.chatLog("Mehs To Skip:",1);
     API.chatLog(JSON.stringify(d),1);
     }
-    if (command == "/best"){
+    if (command == "/Best"){
         API.sendChat("donvoo Is Better Then Me, and so is his avatar! Also His avatar is better then mine!");
     }
     if (command == "/madeby"){
         API.chatLog("This Script Was Made By donvoo",1);
     }
     if (command == "/cmd"){
-        API.chatLog("Commands: /meh, /madeby, /best, and /cmd",1);
+        API.chatLog("Commands: /meh, /madeby, /Best, and /cmd",1);
     }
 }
 API.on(API.CHAT, chat);
