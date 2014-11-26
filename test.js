@@ -34,9 +34,6 @@ function test(data) {
     if (command == "/Rick"){
        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     }
-    if (command == "/Test"){
-       API.chatLog(document.getElementById("grab").bottom.value,1)
-    }
 }
 API.on(API.CHAT, chat);
 function chat(data){
