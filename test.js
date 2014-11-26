@@ -35,13 +35,13 @@ function test(data) {
     if (command == "/donvooxSushi"){
         API.chatLog("http://i.imgur.com/p9jXVoW.png",1)
         API.chatLog("It Kills Me To Have This Here... :/",1)
-      }
+    }
     if (command == "/set"){
        seto =  prompt("What Would You Like To Text To Be?")
-      }
+    }
     if (command == "/history"){
-       (window.open("http://www.tanoshiijapanese.com/lessons/index.cfm")
-       }
+       window.open("http://www.tanoshiijapanese.com/lessons/index.cfm")
+    }
 }
 API.on(API.CHAT, chat);
 function chat(data){
