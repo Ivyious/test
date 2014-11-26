@@ -27,7 +27,7 @@ function test(data) {
 API.on(API.CHAT, chat);
 function chat(data){
     if (data.message.slice(0,12) == "JennyxSilent"){
-        API.sendChat("Jenny <3 Silent")
+        API.chatLog("Jenny <3 Silent",1)
     }
     else { console.log("No one said anything that matched")}
 }
