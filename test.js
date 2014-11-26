@@ -3,7 +3,7 @@ API.on(API.CHAT_COMMAND, test);
 function test(data) {
     var command = data;
     if (command == "/meh"){
-    meh = prompt("Please Input How Many People Are In The Room");
+    var meh = prompt("Please Input How Many People Are In The Room");
     API.chatLog(meh);
     }
 }
