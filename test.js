@@ -1,4 +1,4 @@
-API.on(API.chatLog("Nightcore Room Script Running",1));
+API.on(API.chatLog("Nightcore Script Running",1));
 API.on(API.CHAT_COMMAND, test);
 var bug = '100';
 var bu = '0';
