@@ -25,7 +25,7 @@ function test(data) {
 }
 API.on(API.CHAT, chat);
 function chat(data){
-    if (data.message.slice(0,5) == "Sushi"){
+    if (data.message.slice(0,13) == "@SushiNatilie"){
         API.sendChat("donvoo is better then Sushi!!!")
     }
     else { console.log("No one said anything that matched")}
