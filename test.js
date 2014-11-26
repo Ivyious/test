@@ -62,8 +62,12 @@ function chat(data){
     }
 }
 //Final Song Score
-API.on(API.ADVANCE, function(data){API.chatLog(data.lastPlay.score.positive)})
-
+API.on(API.SCORE_UPDATE, score);
+function score(data){
+    if (API.getTimeRemaining() == 0){
+    API.chatLog("Woots: "+API.getScore().positive,1)
+    }
+}
 
  
 
