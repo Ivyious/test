@@ -10,7 +10,7 @@ var a = localStorage.getItem("babe")
 var welcome = "Nightcore Script Running, Go /cmd For Commands"
 var ccc = '0';
 API.chatLog( welcome,true);
-API.on(API.CHAT_COMMAND, test);
+API.on(API.CHAT_COMMAND, test, API.CHAT);
 //Commands
 function test(data) {
     var command = data;
@@ -40,8 +40,9 @@ function test(data) {
     if (command == "/Website"){
         API.chatLog("URL: http://www.nightcore-331.tk/index.php",30)
     }
-    if (command == "/babe"){
-        API.chatLog("Times donvoo Has Been Mentioned: "+localStorage.getItem("babe"),1)
+    if (command == "/babe" & data.un == "donvoo"){
+        ccc = prompt("What Would You Like To Set It To?")
+        localStorage.setItem("babe",ccc)
     }
 }
 //Chat Triggers
@@ -58,10 +59,6 @@ function chat(data){
     }
      if (data.message.slice(0,8) == "RickRoll" & data.un == "donvoo" ){
       window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")   
-    }
-    if (data.message.slice(0,9) == "ResetBabe" & data.un == "donvoo" ){
-        ccc = prompt("What Would You Like To Set It To?")
-        localStorage.setItem("babe",ccc)
     }
 }
 //Final Song Score (WIP)
