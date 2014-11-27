@@ -21,8 +21,8 @@ function test(data) {
         API.sendChat("donvoo Is The Best!");
     }
     if (command == "/madeby"){
-        API.chatLog("This Script Was Made By donvoo, Go donvoo!",1);
-        API.chatLog("Documents made by DJ_YoloSwaggins33, What a scrub!",1)
+        API.chatLog("This Script Was Made By donvoo <---(Very Sexy, 10/10)",1);
+        API.chatLog("Document Made By DJ_YoloSwaggins33",1)
     }
     if (command == "/cmd"){
         API.chatLog("Commands: /meh, /madeby, /best, /Rick, /Website and /cmd",1);
