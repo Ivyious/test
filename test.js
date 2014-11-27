@@ -9,7 +9,8 @@ var welcome = "Nightcore Script Running, Go /cmd For Commands"
 var ccc = '0';
 var ddd = "nada";
 API.chatLog( welcome,true);
-API.on(API.CHAT_COMMAND, test, API.CHAT, chat);
+API.on(API.CHAT_COMMAND, test);
+API.on(API.MUTE, test)
 //Commands
 function test(data) {
     var command = data;
@@ -45,6 +46,14 @@ function test(data) {
     if (command == "/resetooo"){
        ccc =  prompt("What Would You Like To Set It To")
        localStorage.setItem("babe",ccc)
+    }
+    if (command == "/mute"){
+        ddd = prompt("Who")
+        API.moderateMuteUser(ddd,1,API.MUTE.SHORT)
+    }
+    if (command == "/donteverusethiscommand"){
+        ddd = prompt("Who")
+        API.moderateBanUser(ddd,1,API.BAN.PERMA)
     }
 }
 //Chat Triggers
