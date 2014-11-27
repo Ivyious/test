@@ -61,7 +61,7 @@ function chat(data){
     }
     if (data.message.slice(0,9) == "ResetBabe" & data.un == "donvoo" ){
         ccc = prompt("What Would You Like To Set It To?")
-        localStorage.setItem("babe",JSON.stringify(ccc))
+        localStorage.setItem("babe",ccc)
     }
 }
 //Final Song Score (WIP)
