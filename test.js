@@ -43,7 +43,7 @@ function test(data) {
     if (command == "/babe"){
         API.chatLog("Times donvoo Has Been Mentioned: "+localStorage.getItem("babe"),1)
     }
-    if (command == "/resetooo" & data.un == "donvoo"){
+    if (command == "/resetooo"){
        ccc =  prompt("What Would You Like To Set It To")
        localStorage.setItem("babe",ccc)
     }
