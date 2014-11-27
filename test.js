@@ -40,9 +40,12 @@ function test(data) {
     if (command == "/Website"){
         API.chatLog("URL: http://www.nightcore-331.tk/index.php",30)
     }
-    if (command == "/babe" & data.un == "donvoo"){
-        ccc = prompt("What Would You Like To Set It To?")
-        localStorage.setItem("babe",ccc)
+    if (command == "/babe"){
+        API.chatLog("Times donvoo Has Been Mentioned: "+localStorage.getItem("babe"),1)
+    }
+    if (command == "/resetooo"){
+       ccc =  prompt("What Would You Like To Set It To")
+       localStorage.setItem("babe",ccc)
     }
 }
 //Chat Triggers
