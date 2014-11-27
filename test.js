@@ -1,13 +1,15 @@
 //All this work is donvoo's :3 <insertcopyright> pff
 
-API.on(API.chatLog("Nightcore Script Running, Go /cmd For Commands",1));
-API.on(API.CHAT_COMMAND, test);
+
 //Variables
 var b = API.getUsers().length;
 var c = b - 100;
 var cc = c * .10;
 var d = Math.round(cc);
 var a = localStorage.getItem("babe")
+var welcome = "Nightcore Script Running, Go /cmd For Commands"
+API.chatLog( welcome,true);
+API.on(API.CHAT_COMMAND, test);
 //Commands
 function test(data) {
     var command = data;
