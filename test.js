@@ -8,6 +8,7 @@ var a = localStorage.getItem("babe")
 var welcome = "Nightcore Script Running, Go /cmd For Commands"
 var ccc = '0';
 var ddd = "nada";
+var eee = "@donvoo";
 API.chatLog( welcome,true);
 API.on(API.CHAT_COMMAND, test);
 API.on(API.MUTE, test)
@@ -55,6 +56,11 @@ function test(data) {
         ddd = prompt("Who")
         API.moderateBanUser(ddd,1,API.BAN.PERMA)
     }
+    if (command == "/id"){
+        eee = prompt("Who")
+        var fff = getId(eee)
+        API.chatLog(JSON.stringify(fff),1)
+    }
 }
 //Chat Triggers
 API.on(API.CHAT, chat);
@@ -79,7 +85,17 @@ function callback(data){
     API.chatLog("DJ: "+data.lastPlay.dj.username,1)
     
 }
-
+//User ID
+function getId(username) {
+        username = username.substr(1);
+        var users = API.getUsers();
+        for (var i = 0; i < users.length; i++) {
+                if (users[i].username===username) {
+                        return users[i].id;
+                }
+        };
+        return false;
+}
  
 
 
