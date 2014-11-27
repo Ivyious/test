@@ -1,6 +1,4 @@
 //All this work is donvoo's :3 <insertcopyright> pff
-
-
 //Variables
 var b = API.getUsers().length;
 var c = b - 100;
