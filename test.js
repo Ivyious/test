@@ -12,7 +12,8 @@ var eee = "@donvoo";
 var zzz = "test"
 API.chatLog( welcome,true);
 API.on(API.CHAT_COMMAND, test);
-API.on(API.MUTE, test)
+API.on(API.CHAT, test)
+
 //Commands
 function test(data) {
     var command = data;
