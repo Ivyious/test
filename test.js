@@ -66,7 +66,7 @@ function chat(data){
 API.on(API.ADVANCE, callback);
 function callback(data){
     API.chatLog("Woots:  "+data.lastPlay.score.positive+"  Grabs:  "+data.lastPlay.score.grabs+"  Mehs:  "+data.lastPlay.score.negative,1)
-    API.chatLog("DJ: "+data.DJ.username,1)
+    API.chatLog("DJ: "+data.lastPlay.dj.username,1)
     
 }
 
