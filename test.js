@@ -48,7 +48,7 @@ function test(data) {
 API.on(API.CHAT, chat);
 function chat(data){
     if (data.message.slice(0,11) == "WhoMyScript" & data.un == "donvoo" ){
-        API.sendChat("I'm Using Your Script donvoo-Senpai <3 !")
+        API.sendChat("I Am donvo  <3 !")
     }
     if (data.message.slice(0,7) == "@donvoo"){
         if (localStorage.babe) {
