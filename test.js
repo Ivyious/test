@@ -7,6 +7,7 @@ var d = Math.round(cc);
 var a = localStorage.getItem("babe")
 var welcome = "Nightcore Script Running, Go /cmd For Commands"
 var ccc = '0';
+var ddd = "nada";
 API.chatLog( welcome,true);
 API.on(API.CHAT_COMMAND, test, API.CHAT, chat);
 //Commands
