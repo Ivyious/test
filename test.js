@@ -25,7 +25,7 @@ function test(data) {
         API.chatLog("Document Made By DJ_YoloSwaggins33",1)
     }
     if (command == "/cmd"){
-        API.chatLog("Commands: /meh, /madeby, /best, /Rick, /Website and /cmd",1);
+        API.chatLog("Commands: /meh, /madeby, /best, /Rick, /Website, /Ship, /babe, and /cmd",1);
     }
     if (command == "/Ship"){
         API.chatLog("http://imgur.com/gallery/eHGde/new",1)
