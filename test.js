@@ -1,3 +1,5 @@
+//All this work is donvoo's :3 <insertcopyright> pff
+
 API.on(API.chatLog("Nightcore Script Running, Go /cmd For Commands",1));
 API.on(API.CHAT_COMMAND, test);
 //Variables
