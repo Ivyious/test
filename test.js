@@ -65,11 +65,9 @@ function chat(data){
     }
 }
 //Final Song Score (WIP)
-API.on(API.SCORE_UPDATE, score);
-function score(data){
-    if (API.getTimeRemaining().remaining == 0){
-    API.chatLog("Woots: "+API.getScore().positive,1)
-    }
+API.on(API.ADVANCE, callback);
+function callback(data){
+    API.chatLog("Woots: "+data.lastPlay.score.positive,1)
 }
 
  
