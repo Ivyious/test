@@ -64,10 +64,10 @@ function chat(data){
         localStorage.setItem("babe",0)
     }
 }
-//Final Song Score
+//Final Song Score (WIP)
 API.on(API.SCORE_UPDATE, score);
 function score(data){
-    if (API.getTimeRemaining() == 0){
+    if (API.getTimeRemaining().remaining == 0){
     API.chatLog("Woots: "+API.getScore().positive,1)
     }
 }
