@@ -67,7 +67,7 @@ function chat(data){
 //Final Song Score (WIP)
 API.on(API.ADVANCE, callback);
 function callback(data){
-    API.chatLog("Woots: "+data.lastPlay.score.positive,1)
+    API.chatLog("Woots:  "+data.lastPlay.score.positive+"  Grabs:  "+data.lastPlay.score.grabs+"  Mehs:  "+data.lastPlay.score.negative,1)
 }
 
  
