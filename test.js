@@ -9,6 +9,7 @@ var welcome = "Nightcore Script Running, Go /cmd For Commands"
 var ccc = '0';
 var ddd = "nada";
 var eee = "@donvoo";
+var zzz = "test"
 API.chatLog( welcome,true);
 API.on(API.CHAT_COMMAND, test);
 API.on(API.MUTE, test)
@@ -49,16 +50,18 @@ function test(data) {
        localStorage.setItem("babe",ccc)
     }
     if (command == "/mute"){
-        ddd = prompt("Who")
-        API.moderateMuteUser(ddd,1,API.MUTE.SHORT)
+        ddd = prompt("Mute Who")
+        var ggg = getId("@"+ddd)
+        API.moderateMuteUser(JSON.stringify(ggg),1,API.MUTE.SHORT)
     }
     if (command == "/donteverusethiscommand"){
-        ddd = prompt("Who")
-        API.moderateBanUser(ddd,1,API.BAN.PERMA)
+        zzz = prompt("Ban Who")
+        var yyy = getId("@"+zzz)
+        API.moderateBanUser(JSON.stringify(yyy),1,API.BAN.PERMA)
     }
     if (command == "/id"){
-        eee = prompt("Who")
-        var fff = getId(eee)
+        eee = prompt("Whos Id Do You Want?")
+        var fff = getId("@"+eee)
         API.chatLog(JSON.stringify(fff),1)
     }
 }
