@@ -10,7 +10,7 @@ var a = localStorage.getItem("babe")
 var welcome = "Nightcore Script Running, Go /cmd For Commands"
 var ccc = '0';
 API.chatLog( welcome,true);
-API.on(API.CHAT_COMMAND, test, API.CHAT);
+API.on(API.CHAT_COMMAND, test, API.CHAT, chat);
 //Commands
 function test(data) {
     var command = data;
@@ -43,7 +43,7 @@ function test(data) {
     if (command == "/babe"){
         API.chatLog("Times donvoo Has Been Mentioned: "+localStorage.getItem("babe"),1)
     }
-    if (command == "/resetooo"){
+    if (command == "/resetooo" & data.un == "donvoo"){
        ccc =  prompt("What Would You Like To Set It To")
        localStorage.setItem("babe",ccc)
     }
