@@ -71,8 +71,8 @@ function test(data) {
         API.chatLog("People Who Mehed: "+JSON.stringify(tt),1)
     }
     if (command == "/battle"){
-        var P1 = prompt("Who Will Get Killed?")
-        var P2 = prompt("Who Will Do The Killing?")
+        var P1 = prompt("Who Will Do The Killing?")
+        var P2 = prompt("Who Will Get Killed?")
         API.sendChat("A Wild "+P1+" Appeared... "+P1+" Used o On "+P2+" ...It's Super Effective!... "+P2+" Faints!")
         
     }
