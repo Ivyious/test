@@ -113,14 +113,14 @@ function getId(username) {
 }
 //Get Mehs
 function getIdo(vote) {
-        vote = vote
+        var usersVoted = [];
         var users = API.getUsers();
         for (var i = 0; i < users.length; i++) {
                 if (users[i].vote===vote) {
-                        return users[i].username;
+                        usersVoted.push(users[i]);
                 }
         };
-        return false;
+        return usersVoted;
 }
  
 
