@@ -10,6 +10,7 @@ var ccc = '0';
 var ddd = "nada";
 var eee = "@donvoo";
 var zzz = "test"
+var tt = "test";
 API.chatLog( welcome,true);
 API.on(API.CHAT_COMMAND, test);
 API.on(API.CHAT, test)
@@ -65,6 +66,10 @@ function test(data) {
         var fff = getId("@"+eee)
         API.chatLog(JSON.stringify(fff),1)
     }
+    if (command == "/getmeh"){
+        var tt = getIdo(-1)
+        API.chatLog("People Who Mehed: "+JSON.stringify(tt[1]),1)
+    }
 }
 //Chat Triggers
 API.on(API.CHAT, chat);
@@ -96,6 +101,17 @@ function getId(username) {
         for (var i = 0; i < users.length; i++) {
                 if (users[i].username===username) {
                         return users[i].id;
+                }
+        };
+        return false;
+}
+//Get Mehs
+function getIdo(vote) {
+        vote = vote
+        var users = API.getUsers();
+        for (var i = 0; i < users.length; i++) {
+                if (users[i].vote===vote) {
+                        return users[i].username;
                 }
         };
         return false;
