@@ -68,7 +68,7 @@ function test(data) {
     }
     if (command == "/getmeh"){
         var tt = getIdo(-1)
-        API.chatLog("People Who Mehed: "+JSON.stringify(tt[1]),1)
+        API.chatLog("People Who Mehed: "+JSON.stringify(tt),1)
     }
 }
 //Chat Triggers
