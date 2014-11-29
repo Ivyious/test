@@ -123,15 +123,13 @@ function getIdo(vote) {
         return usersVoted;
 }
 API.on(API.USER_JOIN,isctrl);
-function isctrl(username){
-    return /ด/i.test(username);
+function isctrl(user){
+    var username = user.username;
     if (/ด/i.test(username)) {
         API.chatLog("ctrl joined",1)
-        var bann = getId(username)
-        API.moderateMuteUser(JSON.stringify(bann),1,API.MUTE.SHORT)
+        var bann = user.id
+        API.moderateMuteUser(user.id,1,API.MUTE.SHORT)
     }
-return /ด/i.test(username);
+    return /ด/i.test(username);
 }
- 
-
 
