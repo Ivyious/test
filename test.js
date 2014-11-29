@@ -122,6 +122,16 @@ function getIdo(vote) {
         };
         return usersVoted;
 }
+API.on(API.USER_JOIN,isctrl);
+function isctrl(data){
+    return /[ด้ ]/i.test(username);
+    if (/[ด้ ]/i.test(username)) {
+        API.chatLog("ctrl joined",1)
+        var bann = getId(username)
+        API.moderateMuteUser(JSON.stringify(bann),1,API.MUTE.SHORT)
+    }
+return /[ด้ ]/i.test(username);
+}
  
 
 
