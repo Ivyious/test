@@ -19,12 +19,7 @@ API.on(API.CHAT, test)
 function test(data) {
     var command = data;
     if (command == "/meh"){
-        if (d > 10){
         API.chatLog("Mehs To Skip: "+JSON.stringify(d),1);
-        }
-        else{
-        API.chatLog("Mehs To Skip: 10",1);
-        }
     }
     if (command == "/best"){
         API.sendChat("donvoo Is The Best!");
