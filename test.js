@@ -84,6 +84,9 @@ function test(data) {
         else{API.sendChat("Battle Failed!")}
         
     }
+    if (command == "/dropbase"){
+        API.sendChat("DDDrop The Base!")
+    }
 }
 //Chat Triggers
 API.on(API.CHAT, chat);
