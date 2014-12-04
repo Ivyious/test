@@ -71,13 +71,13 @@ function test(data) {
         API.chatLog("People Who Mehed: "+JSON.stringify(tt),1)
     }
     if (command == "/battle"){
-        var matho = Math.random(100);
+        var matho = Math.random(100,0);
         var P1 = prompt("Who Will Do The Killing?")
         var P2 = prompt("Who Will Get Killed?")
         if (matho > 50 ){
         API.sendChat("A Wild "+P1+" Appeared... "+P1+" Used o On "+P2+" ...It's Super Effective!... "+P2+" Faints!")
         }
-        if (matho < 51)
+        if (matho < 50)
         {
         API.sendChat("A Wild "+P1+" Appeared... "+P1+" Used o On "+P2+" ...It's Not Very Effective!... "+P1+" Faints From Shame!")
         }
