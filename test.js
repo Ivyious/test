@@ -11,6 +11,8 @@ var ddd = "nada";
 var eee = "@donvoo";
 var zzz = "test"
 var tt = "test";
+localStorage.getItem("songTime");
+var counter; setInterval(function (){counter = localStorage.songTime;  counter = counter + 1},1000);
 API.chatLog(welcome,true);
 API.on(API.CHAT_COMMAND, test);
 API.on(API.CHAT, test)
@@ -85,15 +87,15 @@ function test(data) {
         
     }
     if (command == "/resetsongtime"){
-        localStorage.setItem("songTime",prompt("Set it to what?"))
+        localStorage.setItem("songTime",0) 
     }
-    if (command == "/songtime"){
-        API.chatLog("Seconds: "+localStorage.getItem("songTime"),1);
-        var lar = localStorage.songTime;
-        var larr = lar / 60;
+    if (command == "/time"){
+        API.chatLog("Time You Have Been In Room",1);
+        API.chatLog("Seconds: "+counter,1);
+        var larr = counter / 60;
         var larrr = Math.floor(larr);
         var larrrr = Math.floor(larr * 100)/100;
-        var dar = lar / 3600;
+        var dar = counter / 3600;
         var darr = Math.floor(dar*100)/100;
         API.chatLog("Minutes: "+larrrr,1);
         API.chatLog("Hours: : "+darr,1);
@@ -122,7 +124,7 @@ function callback(data){
     API.chatLog("DJ: "+data.lastPlay.dj.username,1)
     API.chatLog(data.lastPlay.media.duration,1)
     if (localStorage.songTime) {
-        localStorage.songTime = parseInt(localStorage.songTime)+data.lastPlay.media.duration} 
+        localStorage.songTime = parseInt(localStorage.songTime)+counter} 
             else {localStorage.songTime = 1
             }
 }
