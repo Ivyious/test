@@ -11,7 +11,7 @@ var ddd = "nada";
 var eee = "@donvoo";
 var zzz = "test"
 var tt = "test";
-API.chatLog( welcome,true);
+API.chatLog(welcome,true);
 API.on(API.CHAT_COMMAND, test);
 API.on(API.CHAT, test)
 
@@ -84,10 +84,14 @@ function test(data) {
         else{API.sendChat("Battle Failed!")}
         
     }
-    if (command == "/dropbase"){
-        API.sendChat("DDDrop The Base!")
+    if (command == "/resetsongtime"){
+        localStorage.setItem("songTime",prompt("Set it to what?"))
     }
-}
+    if (command == "/songtime"){
+        
+        API.chatLog(localStorage.getItem("songTime"),1);
+      }
+  }
 //Chat Triggers
 API.on(API.CHAT, chat);
 function chat(data){
@@ -109,7 +113,10 @@ API.on(API.ADVANCE, callback);
 function callback(data){
     API.chatLog("Woots:  "+data.lastPlay.score.positive+"  Grabs:  "+data.lastPlay.score.grabs+"  Mehs:  "+data.lastPlay.score.negative,1)
     API.chatLog("DJ: "+data.lastPlay.dj.username,1)
-    
+    if (localStorage.songTime) {
+        localStorage.songTime = parseInt(localStorage.songTime)+data.lastPlay.duration} 
+            else {localStorage.songTime = 1
+            }
 }
 //User ID
 function getId(username) {
