@@ -113,6 +113,7 @@ API.on(API.ADVANCE, callback);
 function callback(data){
     API.chatLog("Woots:  "+data.lastPlay.score.positive+"  Grabs:  "+data.lastPlay.score.grabs+"  Mehs:  "+data.lastPlay.score.negative,1)
     API.chatLog("DJ: "+data.lastPlay.dj.username,1)
+    API.chatLog(data.lastPlay.duration,1)
     if (localStorage.songTime) {
         localStorage.songTime = parseInt(localStorage.songTime)+data.lastPlay.duration} 
             else {localStorage.songTime = 1
