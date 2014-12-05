@@ -11,13 +11,8 @@ var ddd = "nada";
 var eee = "@donvoo";
 var zzz = "test"
 var tt = "test";
-localStorage.getItem("songTime")
-setInterval(function (){
-    if (localStorage.getItem('songTime') == null){
-        localStorage.setItem('songTime',0)}
-    var counter = parseInt(localStorage.getItem('songTime'))+1
-    localStorage.setItem('songTime',counter)
-    },1000)
+
+var counter = setInterval(function (){counter = counter + 1},1000)
 API.chatLog(welcome,true);
 API.on(API.CHAT_COMMAND, test);
 API.on(API.CHAT, test)
