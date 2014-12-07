@@ -11,8 +11,9 @@ var ddd = "nada";
 var eee = "@donvoo";
 var zzz = "test"
 var tt = "test";
+var counter = '0';
 
-var counter = setInterval(function (){counter = counter + 1},1000)
+counter = setInterval(function (){counter = counter + 1},1000)
 API.chatLog(welcome,true);
 API.on(API.CHAT_COMMAND, test);
 API.on(API.CHAT, test)
