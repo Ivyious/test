@@ -100,8 +100,15 @@ function test(data) {
         var darr = Math.floor(dar*100)/100;
         API.chatLog("Minutes: "+larrrr,1);
         API.chatLog("Hours: : "+darr,1);
+    }
+    if (command == "/bassdrop"){
+        API.sendChat(":Basssss: Dropping The Bass In 10! :Basssss:");
+        setTimeout(basedd,10000)
+        function basedd(){
+            API.sendChat(":BassDropped: Bassssss Dropped! :BassDropped:")
         }
     }
+}
 //Chat Triggers
 API.on(API.CHAT, chat);
 function chat(data){
