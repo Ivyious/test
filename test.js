@@ -178,4 +178,12 @@ function sctrl(user){
     }
     return /Ctrl/i.test(username);
 }
+API.on(API.USER_JOIN,laquit);
+function laquit(user){
+    var username = user.username;
+    if (user.level < 3){
+        API.sendChat("A User Under Lv 3 Has Joined, Name: @"+user.username)
+    }
+}
+
 
