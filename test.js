@@ -78,11 +78,11 @@ function test(data) {
         var P1 = prompt("Who Will Do The Killing?")
         var P2 = prompt("Who Will Get Killed?")
         if (matho > 5 ){
-        API.sendChat("A Wild "+P1+" Appeared... "+P1+" Used o On "+P2+" ...It's Super Effective!... "+P2+" Faints!")
+        API.sendChat("A Wild "+P1+" Appeared... "+P1+" Used a GIANT FUCKING KNIFE On "+P2+" ...It's Super Effective!... "+P2+" Faints!")
         }
         if (matho < 5)
         {
-        API.sendChat("A Wild "+P1+" Appeared... "+P1+" Used o On "+P2+" ...It's Not Very Effective!... "+P1+" Faints From Shame!")
+        API.sendChat("A Wild "+P1+" Appeared... "+P1+" Used a GIANT FUCKING KNIFE On "+P2+" ...It's Not Very Effective!... "+P1+" Faints From Shame!")
         }
         else{API.sendChat("Battle Failed!")}
         
