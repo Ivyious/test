@@ -182,7 +182,7 @@ API.on(API.USER_JOIN,laquit);
 function laquit(user){
     var username = user.username;
     if (user.level < 3){
-        API.sendChat("A User Under Lv 3 Has Joined, Name: @"+user.username)
+        API.chatLog("A User Under Lv 3 Has Joined, Name: @"+user.username,1)
     }
 }
 
