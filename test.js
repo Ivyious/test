@@ -108,6 +108,13 @@ function test(data) {
             API.sendChat(":BassDropped: Bassssss Dropped! :BassDropped:")
         }
     }
+    if (command == "/bassdropfake"){
+        API.sendChat(":Basssss: Dropping The Bass In 10! :Basssss:");
+        setTimeout(baseddd,10000)
+        function baseddd(){
+            API.sendChat(":SadBear: Wait... Wheres My Base Drop??? :SadBear:")
+        }
+    }
 }
 //Chat Triggers
 API.on(API.CHAT, chat);
