@@ -101,11 +101,11 @@ function test(data) {
         API.chatLog("Minutes: "+larrrr,1);
         API.chatLog("Hours: : "+darr,1);
     }
-    if (command == "/bassdrop"){
-        API.sendChat(":Basssss: Dropping The Bass In 10! :Basssss:");
+    if (command == "/faggot"){
+        API.sendChat(":KappaGif: Donvoo is a faggot in 10 :Kappagif:");
         setTimeout(basedd,10000)
         function basedd(){
-            API.sendChat(":BassDropped: Bassssss Dropped! :BassDropped:")
+            API.sendChat(":KappaGif: Donvoo is a faggot! :KappaGif:")
         }
     }
     if (command == "/bassdropfake"){
