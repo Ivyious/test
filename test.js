@@ -102,7 +102,7 @@ function test(data) {
         API.chatLog("Hours: : "+darr,1);
     }
     if (command == "/faggot"){
-        API.sendChat(":KappaGif: Donvoo is a faggot in 10 :Kappagif:");
+        API.sendChat(":lenny: Donvoo is a faggot in 10 :lenny:");
         setTimeout(basedd,10000)
         function basedd(){
             API.sendChat(":KappaGif: Donvoo is a faggot! :KappaGif:")
