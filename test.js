@@ -165,24 +165,6 @@ function getIdo(vote) {
         };
         return usersVoted;
 }
-API.on(API.USER_JOIN,isctrl);
-function isctrl(user){
-    var username = user.username;
-    if (/ด/i.test(username)) {
-        API.chatLog("ctrl joined",1)
-        var bann = user.id
-        API.moderateMuteUser(user.id,1,API.MUTE.SHORT)
-    }
-    return /ด/i.test(username);
-}
-API.on(API.USER_JOIN,sctrl);
-function sctrl(user){
-    var username = user.username;
-    if (/Ctrl/i.test(username)) {
-        API.chatLog("ctrl joined",1)
-        var bann = user.id
-        API.moderateMuteUser(user.id,1,API.MUTE.SHORT)
-    }
     return /Ctrl/i.test(username);
 }
 API.on(API.USER_JOIN,laquit);
